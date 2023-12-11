@@ -4,7 +4,7 @@
   height: 492px;
   width: 1080px;
   left: 0px;
-  top: 968px;
+  top: 5px;
   /* border: 1px solid #979797; */
   background-color: white;
   overflow: hidden;
@@ -107,4 +107,3 @@
   top: 0px;
   z-index: 999;
 }
-
