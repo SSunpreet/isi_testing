@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Opdivo</title>
+    <!-- This allows you to interface with the IXR host app -->
+    <script type="text/javascript">
+        var appHost = window.appHost = new window.top.AppHost(this);
+    </script>
+    <script type="text/javascript" src="script/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="script/ad.js"></script>
+    <script>console.log = function () { }; console.info = function () { }; console.warn = function () { }; console.error = function () { };</script>
+    <link type="text/css" href="scroller.css" rel="stylesheet">
+
+    <style>
+        #align_cp {
+            width: 1080px;
+            height: 1733px;
+            overflow: hidden;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* border-style: solid;
+            border-width: 1px;
+            border-color: #000000; */
+            /* cursor: pointer; */
+        }
+
+        #one {
+            width: 1080px;
+            height: 967px;
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            /* background-color: yellow; */
+            opacity: 0.5;
+            /* cursor: pointer; */
+        }
+
+        .pi-isi {
+            position: absolute;
+            top: 5780px;
+            left: 417px;
+            width: 340px;
+            height: 50px;
+            /* background-color: red; */
+            opacity: 0.5;
+        }
+
+        .mg-isi {
+            position: absolute;
+            top: 5780px;
+            left: 795px;
+            width: 190px;
+            height: 50px;
+            /* background-color: blue; */
+            opacity: 0.5;
+        }
+
+        .legal-notice {
+            position: absolute;
+            top: 6010px;
+            left: 312px;
+            width: 191px;
+            height: 50px;
+            /* background-color: orange; */
+            opacity: 0.5;
+        }
+
+        .privacy-policy {
+            position: absolute;
+            top: 6010px;
+            left: 513px;
+            width: 191px;
+            height: 50px;
+            /* background-color: green; */
+            opacity: 0.5;
+        }
+
+        #pi-footer {
+            position: absolute;
+            top: 1531px;
+            left: 52px;
+            width: 358px;
+            height: 50px;
+            /* background-color: red; */
+            opacity: 0.5;
+        }
+
+        #mg-footer {
+            position: absolute;
+            top: 1532px;
+            left: 448px;
+            width: 206px;
+            height: 50px;
+            /* background-color: yellow; */
+            opacity: 0.5;
+        }
+
+        .qr-code {
+            position: absolute;
+            top: 1461px;
+            left: 813px;
+            width: 232px;
+            height: 232px;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <div id="align_cp">
+        <a class="main-link">
+            <img src="./assets/iads-4498_bg_1080x1733.jpg" width="1080px" height="1733px">
+            <!-- <img src="./assets/UIXR-BLADDER-WMY.jpeg" class="qr-code"> -->
+        </a>
+        <div id="outerMostDiv">
+            <div id="innerMostDiv">
+                <img id="ISI_guts" src='./assets/IADS-4498_isi_1080x6439.png'>
+                <div class="pi-isi"></div>
+                <div class="mg-isi"></div>
+                <div class="legal-notice"></div>
+                <div class="privacy-policy"></div>
+            </div>
+            <div id="isi-controls"></div>
+        </div>
+    </div>
+
+    <div id="one"></div>
+    <div id="pi-footer"></div>
+    <div id="mg-footer"></div>
+
+    <script type="text/javascript" src="script/CSSPlugin.min.js"></script>
+    <script src="script/ScrollToPlugin.js"></script>
+    <script src="script/tweenmax_2.0.1_min.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
+</body>
+
+</html>
